@@ -26,6 +26,8 @@ public class Main {
         // inner for loop -> n - 1 iterations (1st pass)
         // inner for loop -> (n - 1) + (n - 2) + (n - 3) .. 1 -> (n * (n - 1)) / 2 -> (n^2 - n) / 2
         // time complexity -> O(n^2)
+
+        // Replaced ">" to "<"
         for (int lastUnsortedIndex = nums.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
             for (int i = 0; i < lastUnsortedIndex; i++) {
                 if (nums[i] < nums[i + 1]) {
@@ -43,6 +45,8 @@ public class Main {
         // inner for loop -> n - 1
         // inner for loop -> (n - 1) + (n - 2) + (n - 3) .. 1 -> (n * (n - 1)) / 2 -> (n^2 - n) / 2
         // time complexity -> O(n^2)
+
+        // Replaced "largest" with "smallest" and from ">" to "<"
         for (int lastUnsortedIndex = nums.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
             int smallest = 0;
 
