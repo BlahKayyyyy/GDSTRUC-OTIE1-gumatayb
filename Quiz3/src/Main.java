@@ -47,7 +47,7 @@ public class Main {
                 }
 
                 System.out.println("Successful games created: " + gamesCreated + "/10\n");
-                
+
                 if (gamesCreated >= 10) {
                     break;
                 }
